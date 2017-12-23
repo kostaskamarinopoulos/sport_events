@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="../vendor/autoload.php" colors="true">
+
+	<php></php>
+
+	<testsuites>
+		<testsuite name="SSDM Technical Test">
+			<directory phpVersion="5.3.0" phpVersionOperator=">=">unit</directory>
+		</testsuite>
+	</testsuites>
+
+	<listeners>
+	  <listener class="\Mockery\Adapter\Phpunit\TestListener"></listener>
+	</listeners>
+
+</phpunit>
